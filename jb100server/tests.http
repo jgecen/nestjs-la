@@ -1,0 +1,12 @@
+###
+# Criar usuario
+POST http://localhost:3000/whatsapp-messages HTTP/1.1
+content-type: application/json
+
+{
+    "from": 44997661896,
+    "text": "Messagem enviada por Gecen: Socorro",
+    "latitude": 10,
+    "longitude": 10,
+    "to": [44985823662, 18985899669, 54985823667, 34974471221] 
+}

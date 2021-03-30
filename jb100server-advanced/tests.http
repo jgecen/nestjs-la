@@ -1,0 +1,51 @@
+
+###
+# Recupera todos os usuários
+GET http://localhost:3000/users HTTP/1.1
+
+###
+# Recupera UM usuário
+GET http://localhost:3000/users/2 HTTP/1.1
+
+###
+# Criar usuario
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "phone": "3396666999999"
+}
+
+###
+# Altera usuario
+PUT http://localhost:3000/users/4 HTTP/1.1
+content-type: application/json
+
+{
+    "phone": "33966662222222"
+}
+
+###
+# Exclui UM usuário
+DELETE http://localhost:3000/users/5 HTTP/1.1
+
+
+###
+# Criar usuario
+POST http://localhost:3000/whatsapp-help HTTP/1.1
+content-type: application/json
+
+{
+    "phone": "44997661896",
+    "message": "Socorro",
+    "location": {
+        "lat": 10,
+        "lon": 5
+    },
+    "toResponsible": [
+        "44985823662",
+        "18985899669",
+        "54985823667",
+        "34974471221"
+    ]
+}
